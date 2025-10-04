@@ -9,43 +9,66 @@
   <body>
     <main class="main">
       <!-- ARTICLE PRESENTACION -->
-       <div class="conteiner__article">
-      <article class="article">
-        <!-- IMG -->
-        <img
-          class="article__img"
-          src="img/fotoPerfil.avif"
-          alt="Foto de perfil"
-        />
-        <!-- CONTENIDO -->
-        <div class="article__contenido">
-          <!-- Subtitulo del Article -->
-          <h3 class="article__subtitulo indie-flower-regular">Experta en flores exóticas</h3>
-          <!-- Presentacion del nombre -->
-          <p class="contenido__presentacion itim-regular">Hola, mi nombre es <br><span class="contenido__nombre inspiration-regular">María Dolores</span></p>
-          <!-- Parrafo -->
-          <p class="contenido__parrafo indie-flower-regular">
-            Lorem ipsum dolor sit amet consectetur. Eget massa ut risus turpis vel tellus erat vel. Nunc fringilla duis vulputate lectus dolor varius. Id morbi ut auctor vel consequat leo. Viverra ac risus pellentesque laoreet leo elementum. Turpis egestas ac pharetra ut id tellus nisl. Nisi at bibendum ut posuere id hendrerit.
-          </p>
-          <!-- Botones -->
-          <div class="contenido__botones indie-flower-regular">
-            <a class="btn__proyecto" href="#">Proyectos</a>
-            <a class="btn__linkedin"
-            href="#">Linkedin</a>
+      <div class="conteiner__article">
+        <article class="article">
+          <!-- IMG -->
+          <figure>
+            <picture>
+              <source
+                media="(min-width:1100px )"
+                srcset="
+                  img/desktop/fotoPerfil.avif    1x,
+                  img/desktop/fotoPerfil@2x.avif 2x
+                "
+                type="image/avif"
+              />
+
+              <source 
+                media="(max-width: 786px )"
+                srcset="
+                  img/smartphone/fotoperfil.avif 1x,
+                  img/smartphone/fotoperfil@2x.avif 2x
+                  " />
+              <img class="article__img" src="" alt="Foto de perfil" />
+            </picture>
+          </figure>
+
+          <!-- CONTENIDO -->
+          <div class="article__contenido">
+            <!-- Subtitulo del Article -->
+            <h3 class="article__subtitulo indie-flower-regular">
+              Experta en flores exóticas
+            </h3>
+            <!-- Presentacion del nombre -->
+            <p class="contenido__presentacion itim-regular">
+              Hola, mi nombre es <br /><span
+                class="contenido__nombre inspiration-regular"
+                >María Dolores</span
+              >
+            </p>
+            <!-- Parrafo -->
+            <p class="contenido__parrafo indie-flower-regular">
+              Lorem ipsum dolor sit amet consectetur. Eget massa ut risus turpis
+              vel tellus erat vel. Nunc fringilla duis vulputate lectus dolor
+              varius. Id morbi ut auctor vel consequat leo. Viverra ac risus
+              pellentesque laoreet leo elementum. Turpis egestas ac pharetra ut
+              id tellus nisl. Nisi at bibendum ut posuere id hendrerit.
+            </p>
+            <!-- Botones -->
+            <div class="contenido__botones indie-flower-regular">
+              <a class="btn__proyecto" href="#">Proyectos</a>
+              <a class="btn__linkedin" href="#">Linkedin</a>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
       </div>
     </main>
-      <!-- BARRA DE MAS INFORMACIÓN -->
-      <section class="section">
-        <div class="section__mas-informacion">
-          <span class="mas-informacion__texto">Mas información</span>
-          <img 
-          class="section__flecha" 
-          src="img/flecha.svg" 
-          alt="Mas">  
-        </div>
-      </section>
+    <!-- BARRA DE MAS INFORMACIÓN -->
+    <section class="section">
+      <div class="section__mas-informacion">
+        <span class="mas-informacion__texto">Mas información</span>
+        <img class="section__flecha" src="img/flecha.svg" alt="Mas" />
+      </div>
+    </section>
   </body>
 </html>
